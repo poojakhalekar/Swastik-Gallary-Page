@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <title>Hotel Swastik Food Mall</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Image/Swastik5_logo.png" alt="Swastik Logo">
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#room">Room</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="address">
+            <i class="fas fa-map-marker-alt"></i>
+            <a href="#"><span>Near Samruddhi Expressway, Shirdi.</span></a>
+        </div>
+
+    </nav>
+
+   
+    
+
+
+
+
+
+ <!--Menu-->
+
+ <div class="menu" id="Menu">
+    <h1>Our<span>Gallery</span></h1>
+<!-- Sliding Images Section -->
+<div class="image-slider">
+    <!-- Navigation Buttons -->
+    <div class="buttons">
+        <button class="prev-button" onclick="prevSlide()">&#10094;</button>
+        <button class="next-button" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+    <div class="owl-carousel owl-theme">
+        <div class="item"><img src="image/a2.jpg" alt="Slide 1"></div>
+        <div class="item"><img src="image/a11.jpg" alt="Slide 2"></div>
+        <div class="item"><img src="image/a12.jpg" alt="Slide 3"></div>
+        <div class="item"><img src="image/a13.jpg" alt="Slide 4"></div>
+        <div class="item"><img src="image/a14.jpg" alt="Slide 5"></div>
+        <div class="item"><img src="image/a16.jpg" alt="Slide 6"></div>
+        <div class="item"><img src="image/a17.jpg" alt="Slide 7"></div>
+        <div class="item"><img src="image/a18.jpg" alt="Slide 8"></div>
+        <div class="item"><img src="image/a19.jpg" alt="Slide 9"></div>
+        <div class="item"><img src="image/a10.jpg" alt="Slide 10"></div>
+        <div class="item"><img src="image/a21.jpg" alt="Slide 11"></div>
+        <div class="item"><img src="image/a22.jpg" alt="Slide 12"></div>
+        <div class="item"><img src="image/a23.jpg" alt="Slide 13"></div>
+        <div class="item"><img src="image/a24.jpg" alt="Slide 14"></div>
+        <div class="item"><img src="image/a25.jpg" alt="Slide 15"></div>
+        <div class="item"><img src="image/a26.jpg" alt="Slide 16"></div>
+        <div class="item"><img src="image/a28.jpg" alt="Slide 17"></div>
+        <div class="item"><img src="image/a1.jpg" alt="Slide 18"></div>
+    </div>
+</div>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function(){
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,  <!-- Disable default navigation -->
+            autoplay: true,
+            autoplayTimeout: 3000,
+            items: 1
+        });
+
+        // Custom Navigation Functions
+        function prevSlide() {
+            owl.trigger('prev.owl.carousel');
+        }
+
+        function nextSlide() {
+            owl.trigger('next.owl.carousel');
+        }
+
+        // Expose the functions to the global scope
+        window.prevSlide = prevSlide;
+        window.nextSlide = nextSlide;
+    });
+</script>
+
+
+
+    
+    <div class="menu_box">
+        <div class="menu_card">
+
+           
+
+            <div class="menu_image">
+                <img src="image/buger.jpg">
+            </div>
+
+            <div class="small_card">
+                
+            </div>
+
+            <div class="menu_info">
+                <h2>Burger</h2>
+                
+                <div class="menu_icon">
+                   
+                </div>
+                
+            </div>
+
+        </div> 
+        
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="image/pasta.jpg">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                <h2>pasta</h2>
+
+                <div class="menu_icon">
+                    
+                </div>
+                
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="image/sandwich.jpg">
+            </div>
+
+            <div class="small_card">
+                
+            </div>
+
+            <div class="menu_info">
+                <h2>Sandwich</h2>
+                
+                <div class="menu_icon">
+                
+                </div>
+                
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="image/chocolate_Drink.jpg">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                <h2>Drink</h2>
+                <div class="menu_icon">
+                    
+                </div>
+                
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="image/img3.jpg">
+            </div>
+
+            <div class="small_card">
+                
+            </div>
+
+            <div class="menu_info">
+                <h2>pizza</h2>
+                
+                <div class="menu_icon">
+                </div>
+            
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="image/img6.jpg">
+            </div>
+
+            <div class="small_card">
+                
+            </div>
+
+            <div class="menu_info">
+                <h2>French Fries</h2>
+               
+                <div class="menu_icon">
+                    
+                </div>
+                
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="image/juse.jpg">
+            </div>
+
+            <div class="small_card">
+            
+            </div>
+
+            <div class="menu_info">
+                <h2>Juice</h2>
+                
+                <div class="menu_icon">
+                </div>
+                
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="image/Special Veg Thali.png">
+            </div>
+
+            <div class="small_card">
+               
+            </div>
+
+            <div class="menu_info">
+                <h2>Special Veg Thali</h2>
+                
+                <div class="menu_icon">
+                
+                </div>
+                
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="image/gallary_4.jpg">
+            </div>
+
+            <div class="small_card">
+               
+            </div>
+
+            <div class="menu_info">
+                <h2>Special Thali</h2>
+                
+                <div class="menu_icon">
+
+                </div>
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="image/shrikhand puri.png">
+            </div>
+
+            <div class="small_card">
+                
+            </div>
+
+            <div class="menu_info">
+                <h2>Shrikhand Puri</h2>
+
+                <div class="menu_icon">
+                    
+                </div>
+        
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="image/jain.jpg">
+            </div>
+
+            <div class="small_card">
+                
+            </div>
+
+            <div class="menu_info">
+                <h2>Jain Food Thali</h2>
+
+                <div class="menu_icon">
+                
+                </div>
+            
+            </div>
+
+        </div> 
+
+        <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="image/sweets.png">
+            </div>
+
+            <div class="small_card">
+                
+            </div>
+
+            <div class="menu_info">
+                <h2>Sweets</h2>
+
+                <div class="menu_icon">
+                </div>
+                
+            </div>
+
+        </div> 
+        
+    </div>
+
+</div>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
